@@ -1,0 +1,233 @@
+Python 3.9.2 (tags/v3.9.2:1a79785, Feb 19 2021, 13:44:55) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> s = 'hello'
+>>> s[0]
+'h'
+>>> s[2] = 'a'
+Traceback (most recent call last):
+  File "<pyshell#2>", line 1, in <module>
+    s[2] = 'a'
+TypeError: 'str' object does not support item assignment
+>>> s = 'this is another string'
+>>> type(s)
+<class 'str'>
+>>> s = 5
+>>> type(s)
+<class 'int'>
+>>> s = 'hello'
+>>> s = 'this is another string'
+>>> id(s)
+2664593234640
+>>> s = 'this test'
+>>> id(s)
+2664589894320
+>>> s = 'programming'
+>>> s[2:5]
+'ogr'
+>>> s
+'programming'
+>>> t = s [2:5]
+>>> t
+'ogr'
+>>> t = s[:]
+>>> t
+'programming'
+>>> s
+'programming'
+>>> id(t)
+2664553132528
+>>> s(s)
+Traceback (most recent call last):
+  File "<pyshell#21>", line 1, in <module>
+    s(s)
+TypeError: 'str' object is not callable
+>>> id(s)
+2664553132528
+>>> type(s)
+<class 'str'>
+>>> dir(s)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> s
+'programming'
+>>> for i in s:
+	print(i)
+
+	
+p
+r
+o
+g
+r
+a
+m
+m
+i
+n
+g
+>>> for i in s:
+	print(i, end= ' ')
+
+	
+p r o g r a m m i n g 
+>>> for i in s:
+	print(i, end= '')
+
+	
+programming
+>>> n = 123
+>>> f = 3.14
+>>> print('%f %d'%(f, n))
+3.140000 123
+>>> s = 'this is a cat'
+>>> s.capitalize()
+'This is a cat'
+>>> msg = '''
+this is my multiline string
+this is another line
+end of my line'''
+>>> print(msg)
+
+this is my multiline string
+this is another line
+end of my line
+>>> def fun():
+	'''
+this function is just for fun
+'''
+	print('hello')
+
+	
+>>> help(len)
+Help on built-in function len in module builtins:
+
+len(obj, /)
+    Return the number of items in a container.
+
+>>> help(fun)
+Help on function fun in module __main__:
+
+fun()
+    this function is just for fun
+
+>>> fun()
+hello
+>>> s
+'this is a cat'
+>>> s [2: 6]
+'is i'
+>>> s [: 2:]
+'th'
+>>> s [::2]
+'ti sact'
+>>> s[start:end: increment]
+Traceback (most recent call last):
+  File "<pyshell#56>", line 1, in <module>
+    s[start:end: increment]
+NameError: name 'start' is not defined
+>>> s[::100]
+'t'
+>>> len(s)
+13
+>>> s
+'this is a cat'
+>>> s[::14]
+'t'
+>>> s
+'this is a cat'
+>>> 'cat' in s
+True
+>>> 'dog' in s
+False
+>>> dog not in s
+Traceback (most recent call last):
+  File "<pyshell#64>", line 1, in <module>
+    dog not in s
+NameError: name 'dog' is not defined
+>>> 'dog' not in s
+True
+>>> print('this persons age is %d'%(15))
+this persons age is 15
+>>> name = 'Tom'
+>>> age = 25
+>>> intro = 'hello this is ' + name + ' and he is ' + str(age) + ' years old'
+>>> print(intro)
+hello this is Tom and he is 25 years old
+>>> print(r'thishlhlk]\\\\')
+thishlhlk]\\\\
+>>> intro2 = 'my name is {name}. I am {age} years old'
+>>> print(intro2)
+my name is {name}. I am {age} years old
+>>> intro2 = f'my name is {name}. I am {age} years old'
+>>> print(intro2)
+my name is Tom. I am 25 years old
+>>> print('my name is {}, and I am {} years old'.format(name, age))
+my name is Tom, and I am 25 years old
+>>> print('my name is {0}, and I am {1} years old'.format(age, name))
+my name is 25, and I am Tom years old
+>>> print('my name is {1}, and I am {0} years old'.format(age, name))
+my name is Tom, and I am 25 years old
+>>> s
+'this is a cat'
+>>> s.upper()
+'THIS IS A CAT'
+>>> s.islower()
+True
+>>> s
+'this is a cat'
+>>> up = s.upper()
+>>> up
+'THIS IS A CAT'
+>>> s
+'this is a cat'
+>>> s == up
+False
+>>> 'abc'.isalpha()
+True
+>>> 'abc '.isalpha()
+False
+>>> 'abc123'.isalnum()
+True
+>>> 'abc123 '.isalnum()
+False
+>>> ','.join(['dogs', 'cats', 'birds'])
+'dogs,cats,birds'
+>>> com = ','
+>>> com.join(['dogs', 'cats', 'birds'])
+'dogs,cats,birds'
+>>> com.split()
+[',']
+>>> com.split(',')
+['', '']
+>>> c = 'dogs,cats,birds'
+>>> c.split()
+['dogs,cats,birds']
+>>> c.split(',')
+['dogs', 'cats', 'birds']
+>>> msg
+'\nthis is my multiline string\nthis is another line\nend of my line'
+>>> print(msg)
+
+this is my multiline string
+this is another line
+end of my line
+>>> msg.split('\n')
+['', 'this is my multiline string', 'this is another line', 'end of my line']
+>>> msg.splitlines()
+['', 'this is my multiline string', 'this is another line', 'end of my line']
+>>> msg
+'\nthis is my multiline string\nthis is another line\nend of my line'
+>>> test = '          hello this is tom        '
+>>> print(test)
+          hello this is tom        
+>>> test.lstrip()
+'hello this is tom        '
+>>> test.rstrip()
+'          hello this is tom'
+>>> test.strip()
+'hello this is tom'
+>>> test
+'          hello this is tom        '
+>>> test='hello***'
+>>> test.rstrip('*')
+'hello'
+>>> 

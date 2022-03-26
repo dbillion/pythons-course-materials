@@ -1,0 +1,21 @@
+Task 1:
+```````
+write separate functions for each task, i.e. max, min, sort, on a list. compare your results with built-in max, min and method sort. 
+we will take one step further in our algorithm development skills, write the code to find out the second hightest value in the list. Remember!! no substitution, elimination nor  changing the order is not allowed. 
+
+```````
+Task 2:
+```````
+write a function that return you the count of unique elements in a given numerical list.
+eg. 
+unique_count([2, 3, 3, 2])     -> 2
+unique_count([1, 1, 1, 2])     -> 2
+unique_count([1,2,3])          -> 3
+
+
+```````
+Task 2:
+```````
+Write a function that creates histograms. Every bar needs to be on a new line and its length corresponds to the numbers in the list passed as an argument. The second argument of the function represents the character
+that needs to be used. 
+histogram(alist, char)

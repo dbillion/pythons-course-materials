@@ -1,0 +1,9 @@
+
+***Write the regular expersions to capture all the email address in the given log file which are inside the < > brackets and save them in  a next text file. (one email per line and only unique email address, i.e. no duplicate emails)
+
+
+*******optional exercise just to boost up your regular expression experience. 
+Try to find all the IPv4 address in the given log file and write them in the next text file (one address per line)
+
+
+

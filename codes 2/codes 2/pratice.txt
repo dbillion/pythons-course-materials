@@ -1,0 +1,500 @@
+  File "<pyshell>", line 1, in <module>
+TypeError: seek expected at least 1 argument, got 0
+>>> f.seek(0)
+0
+>>> for line in f:
+    print(line)
+    
+Why should you learn to write programs?
+
+Writing programs (or programming) is a very creative and rewarding activity. 
+
+You can write programs for many reasons;ranging from making your living to solving a difficult data analysis problem to having fun to helping
+
+someone else solve a problem.  
+
+This book assumes that everyone needs to know how to program, and that once 
+
+you know how to program you will figure out what you want to do with your newfound skills.
+>>> for line in f:
+    print(line.strip())
+    
+>>> f.seek(0)
+0
+>>> for line in f:
+    print(line.strip())
+    
+Why should you learn to write programs?
+Writing programs (or programming) is a very creative and rewarding activity.
+You can write programs for many reasons;ranging from making your living to solving a difficult data analysis problem to having fun to helping
+someone else solve a problem.
+This book assumes that everyone needs to know how to program, and that once
+you know how to program you will figure out what you want to do with your newfound skills.
+>>> f.closed
+False
+>>> help(f.closed)
+Help on bool object:
+
+class bool(int)
+ |  bool(x) -> bool
+ |  
+ |  Returns True when the argument x is true, False otherwise.
+ |  The builtins True and False are the only two instances of the class bool.
+ |  The class bool is a subclass of the class int, and cannot be subclassed.
+ |  
+ |  Method resolution order:
+ |      bool
+ |      int
+ |      object
+ |  
+ |  Methods defined here:
+ |  
+ |  __and__(self, value, /)
+ |      Return self&value.
+ |  
+ |  __or__(self, value, /)
+ |      Return self|value.
+ |  
+ |  __rand__(self, value, /)
+ |      Return value&self.
+ |  
+ |  __repr__(self, /)
+ |      Return repr(self).
+ |  
+ |  __ror__(self, value, /)
+ |      Return value|self.
+ |  
+ |  __rxor__(self, value, /)
+ |      Return value^self.
+ |  
+ |  __xor__(self, value, /)
+ |      Return self^value.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Static methods defined here:
+ |  
+ |  __new__(*args, **kwargs) from builtins.type
+ |      Create and return a new object.  See help(type) for accurate signature.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from int:
+ |  
+ |  __abs__(self, /)
+ |      abs(self)
+ |  
+ |  __add__(self, value, /)
+ |      Return self+value.
+ |  
+ |  __bool__(self, /)
+ |      self != 0
+ |  
+ |  __ceil__(...)
+ |      Ceiling of an Integral returns itself.
+ |  
+ |  __divmod__(self, value, /)
+ |      Return divmod(self, value).
+ |  
+ |  __eq__(self, value, /)
+ |      Return self==value.
+ |  
+ |  __float__(self, /)
+ |      float(self)
+ |  
+ |  __floor__(...)
+ |      Flooring an Integral returns itself.
+ |  
+ |  __floordiv__(self, value, /)
+ |      Return self//value.
+ |  
+ |  __format__(self, format_spec, /)
+ |      Default object formatter.
+ |  
+ |  __ge__(self, value, /)
+ |      Return self>=value.
+ |  
+ |  __getattribute__(self, name, /)
+ |      Return getattr(self, name).
+ |  
+ |  __getnewargs__(self, /)
+ |  
+ |  __gt__(self, value, /)
+ |      Return self>value.
+ |  
+ |  __hash__(self, /)
+ |      Return hash(self).
+ |  
+ |  __index__(self, /)
+ |      Return self converted to an integer, if self is suitable for use as an index into a list.
+ |  
+ |  __int__(self, /)
+ |      int(self)
+ |  
+ |  __invert__(self, /)
+ |      ~self
+ |  
+ |  __le__(self, value, /)
+ |      Return self<=value.
+ |  
+ |  __lshift__(self, value, /)
+ |      Return self<<value.
+ |  
+ |  __lt__(self, value, /)
+ |      Return self<value.
+ |  
+ |  __mod__(self, value, /)
+ |      Return self%value.
+ |  
+ |  __mul__(self, value, /)
+ |      Return self*value.
+ |  
+ |  __ne__(self, value, /)
+ |      Return self!=value.
+ |  
+ |  __neg__(self, /)
+ |      -self
+ |  
+ |  __pos__(self, /)
+ |      +self
+ |  
+ |  __pow__(self, value, mod=None, /)
+ |      Return pow(self, value, mod).
+ |  
+ |  __radd__(self, value, /)
+ |      Return value+self.
+ |  
+ |  __rdivmod__(self, value, /)
+ |      Return divmod(value, self).
+ |  
+ |  __rfloordiv__(self, value, /)
+ |      Return value//self.
+ |  
+ |  __rlshift__(self, value, /)
+ |      Return value<<self.
+ |  
+ |  __rmod__(self, value, /)
+ |      Return value%self.
+ |  
+ |  __rmul__(self, value, /)
+ |      Return value*self.
+ |  
+ |  __round__(...)
+ |      Rounding an Integral returns itself.
+ |      Rounding with an ndigits argument also returns an integer.
+ |  
+ |  __rpow__(self, value, mod=None, /)
+ |      Return pow(value, self, mod).
+ |  
+ |  __rrshift__(self, value, /)
+ |      Return value>>self.
+ |  
+ |  __rshift__(self, value, /)
+ |      Return self>>value.
+ |  
+ |  __rsub__(self, value, /)
+ |      Return value-self.
+ |  
+ |  __rtruediv__(self, value, /)
+ |      Return value/self.
+ |  
+ |  __sizeof__(self, /)
+ |      Returns size in memory, in bytes.
+ |  
+ |  __sub__(self, value, /)
+ |      Return self-value.
+ |  
+ |  __truediv__(self, value, /)
+ |      Return self/value.
+ |  
+ |  __trunc__(...)
+ |      Truncating an Integral returns itself.
+ |  
+ |  as_integer_ratio(self, /)
+ |      Return integer ratio.
+ |      
+ |      Return a pair of integers, whose ratio is exactly equal to the original int
+ |      and with a positive denominator.
+ |      
+ |      >>> (10).as_integer_ratio()
+ |      (10, 1)
+ |      >>> (-10).as_integer_ratio()
+ |      (-10, 1)
+ |      >>> (0).as_integer_ratio()
+ |      (0, 1)
+ |  
+ |  bit_length(self, /)
+ |      Number of bits necessary to represent self in binary.
+ |      
+ |      >>> bin(37)
+ |      '0b100101'
+ |      >>> (37).bit_length()
+ |      6
+ |  
+ |  conjugate(...)
+ |      Returns self, the complex conjugate of any int.
+ |  
+ |  to_bytes(self, /, length, byteorder, *, signed=False)
+ |      Return an array of bytes representing an integer.
+ |      
+ |      length
+ |        Length of bytes object to use.  An OverflowError is raised if the
+ |        integer is not representable with the given number of bytes.
+ |      byteorder
+ |        The byte order used to represent the integer.  If byteorder is 'big',
+ |        the most significant byte is at the beginning of the byte array.  If
+ |        byteorder is 'little', the most significant byte is at the end of the
+ |        byte array.  To request the native byte order of the host system, use
+ |        `sys.byteorder' as the byte order value.
+ |      signed
+ |        Determines whether two's complement is used to represent the integer.
+ |        If signed is False and a negative integer is given, an OverflowError
+ |        is raised.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Class methods inherited from int:
+ |  
+ |  from_bytes(bytes, byteorder, *, signed=False) from builtins.type
+ |      Return the integer represented by the given array of bytes.
+ |      
+ |      bytes
+ |        Holds the array of bytes to convert.  The argument must either
+ |        support the buffer protocol or be an iterable object producing bytes.
+ |        Bytes and bytearray are examples of built-in objects that support the
+ |        buffer protocol.
+ |      byteorder
+ |        The byte order used to represent the integer.  If byteorder is 'big',
+ |        the most significant byte is at the beginning of the byte array.  If
+ |        byteorder is 'little', the most significant byte is at the end of the
+ |        byte array.  To request the native byte order of the host system, use
+ |        `sys.byteorder' as the byte order value.
+ |      signed
+ |        Indicates whether two's complement is used to represent the integer.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from int:
+ |  
+ |  denominator
+ |      the denominator of a rational number in lowest terms
+ |  
+ |  imag
+ |      the imaginary part of a complex number
+ |  
+ |  numerator
+ |      the numerator of a rational number in lowest terms
+ |  
+ |  real
+ |      the real part of a complex number
+
+>>> f.close()
+>>> f
+<_io.TextIOWrapper name='intro.txt' mode='r' encoding='cp1252'>
+>>> f.closed
+True
+>>> f.open('newfile.txt', 'w')
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+AttributeError: '_io.TextIOWrapper' object has no attribute 'open'
+>>> f = open('newfile.txt', 'w')
+>>> f.write('this is my first line of text in the file')
+41
+>>> f.write('this is my second line of text in the file')
+42
+>>> f.write('this is my third line of text in the file')
+41
+>>> f.write('this is my fourth line of text in the file')
+42
+>>> f.write('this is my fifth line of text in the file')
+41
+>>> f.close()
+>>> f.closed
+True
+>>> f = open('newfile.txt')
+>>> f.readline()
+'this is my first line of text in the filethis is my second line of text in the filethis is my third line of text in the filethis is my fourth line of text in the filethis is my fifth line of text in the file'
+>>> f.close()
+>>> f = open('newfile.txt', 'w')
+>>> for i in range(10):
+    f.write('this is my test {}'.format(i+1))
+    f.write('\n')
+    
+>>> f.close()
+>>> with open('newfile.txt') as f:
+    f.read()
+    
+>>> f.close()
+>>> with open('newfile.txt') as f:
+    data = f.read()
+    
+>>> print(data)
+this is my test 1
+this is my test 2
+this is my test 3
+this is my test 4
+this is my test 5
+this is my test 6
+this is my test 7
+this is my test 8
+this is my test 9
+this is my test 10
+
+>>> f.closed
+True
+>>> with open('newfile.txt', 'w', encoding = 'utf-8') as f:
+    f.write('this is my first line with "with" operator')
+    f.write('\n')
+    
+>>> f.closed()
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+TypeError: 'bool' object is not callable
+>>> f.closed
+True
+>>> s = 'this is my test string'
+>>> import shelve
+>>> sf = shelve.open('mydata')
+>>> sf['my string'] = s
+>>> sf.close()
+>>> sf = shelve.open('mydata')
+>>> type(sf)
+<class 'shelve.DbfilenameShelf'>
+>>> sf['my string']
+'this is my test string'
+>>> sf.close()
+>>> import re
+>>> m = re.compile('batman')
+>>> mo = m.search('I like batman movie')
+>>> mo
+<re.Match object; span=(7, 13), match='batman'>
+>>> mo.group()
+'batman'
+>>> myre = re.compile(r'cat|dog')
+>>> mo = myre.search('I am allergic to cat and dog hairs')
+>>> m0
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+NameError: name 'm0' is not defined
+>>> mo
+<re.Match object; span=(17, 20), match='cat'>
+>>> mo = myre.findall('I am allergic to cat and dog hairs')
+>>> m0
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+NameError: name 'm0' is not defined
+>>> mo
+['cat', 'dog']
+>>> mr = re.compile(r'super(wo)?man')
+>>> mo = my.search('i am a superman')
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+NameError: name 'my' is not defined
+>>> mo = mr.search('i am a superman')
+>>> mo
+<re.Match object; span=(7, 15), match='superman'>
+>>> mo = mr.search('i am not a superwoman')
+>>> mo
+<re.Match object; span=(11, 21), match='superwoman'>
+>>> mo = mr.findall('I am not a fan of superman or superwoman movies')
+>>> mo
+['', 'wo']
+>>> mr = re.compile(r'super(wo)*man')
+>>> mo = mr.search('the adventures of superman')
+>>> mo
+<re.Match object; span=(18, 26), match='superman'>
+>>> mo = mr.search('the adventures of superwoman')
+>>> mo
+<re.Match object; span=(18, 28), match='superwoman'>
+>>> mo = mr.search('the adventures of superwowowowowoman')
+>>> mo
+<re.Match object; span=(18, 36), match='superwowowowowoman'>
+>>> mr = re.compile(r'super(wo)?man')
+>>> mo = mr.search('the adventures of superwowowowowoman')
+>>> mo
+>>> mr = re.compile(r'super(wo)+man')
+>>> mo = mr.search('the adventures of superman')
+>>> mo
+>>> mo = mr.search('the adventures of superwowowowowoman')
+>>> mo
+<re.Match object; span=(18, 36), match='superwowowowowoman'>
+>>> mr = re.compile(r'super(wo){3}man')
+>>> mo = mr.search('the adventures of superwowowowowoman')
+>>> mo
+>>> mo = mr.search('the adventures of superwowowoman')
+>>> mo
+<re.Match object; span=(18, 32), match='superwowowoman'>
+>>> mr = re.compile(r'super(wo){3, 5}man')
+>>> mo = mr.search('the adventures of superwowowowoman')
+>>> mo
+>>> mo = mr.search('the adventures of superwowowowowoman')
+>>> mo
+>>> mr = re.compile(r'super(wo){3,5}man')
+>>> mo = mr.search('the adventures of superwowowowowoman')
+>>> mo
+<re.Match object; span=(18, 36), match='superwowowowowoman'>
+>>> mo = mr.search('the adventures of superwowowowoman')
+>>> mo
+<re.Match object; span=(18, 34), match='superwowowowoman'>
+>>> msg = 'call me on my number 455-555-2442'
+>>> fone = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+>>> mo = fone.search(msg)
+>>> mo
+<re.Match object; span=(21, 33), match='455-555-2442'>
+>>> mo.group()
+'455-555-2442'
+>>> mo.group(0)
+'455-555-2442'
+>>> fone = re.compile(r'(\d\d\d)-(\d\d\d)-(\d\d\d\d)')
+>>> mo = fone.search(msg)
+>>> mo.group(0)
+'455-555-2442'
+>>> mo.group(1)
+'455'
+>>> mo.group(2)
+'555'
+>>> mo.group(3)
+'2442'
+>>> msg = '''
+I am out of country, kindly call my on my UAN
+at 455-566-34544 or at 233-444-3454
+'''
+>>> mo = fone.findall(msg)
+>>> mo
+[('455', '566', '3454'), ('233', '444', '3454')]
+>>> fone = re.compile(r'[56]\d{6,7}')
+>>> msg = '''
+I am out of country, kindly call my on my UAN
+at 56634544 or at 6544454
+'''
+>>> mo = fone.findall(msg)
+>>> mo
+['56634544', '6544454']
+>>> msg = '''
+I am out of country, kindly call my on my UAN
+at 56634544 or at 7544454
+'''
+>>> 
+>>> mo = fone.findall(msg)
+>>> mo
+['56634544']
+>>> fone = re.compile(r'''
+(\+372|00372)    #county code
+[ -] #country code and individual number separator
+([56]\d{6,7}) #individual number landline/cell
+''', re.VERBOSE)
+>>> msg = '''
+I am out of country, kindly call my on my UAN
+at +372 56634544 or at 00372-6258399
+'''
+>>> mo = fone.findall(msg)
+>>> mo
+[('+372', '56634544'), ('00372', '6258399')]
+>>> mo.group(0)
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'group'
+>>> mo = fone.search(msg)
+>>> mo.group()
+'+372 56634544'
+>>> mo.group(1)
+'+372'
+>>> mo.group(2)
+'56634544'
+>>> 

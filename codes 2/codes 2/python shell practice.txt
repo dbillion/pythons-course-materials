@@ -1,0 +1,214 @@
+>>> s = 'python'
+>>> t = s[2:10]
+>>> t
+'thon'
+>>> t = s[6:]
+>>> t
+''
+>>> s = 'this is my test'
+>>> s
+'this is my test'
+>>> s[0]
+'t'
+>>> s[:]
+'this is my test'
+>>> t = s[5:]
+>>> t
+'is my test'
+>>> s
+'this is my test'
+>>> s[-5:]
+' test'
+>>> s[::2]
+'ti sm et'
+>>> s[::-1]
+'tset ym si siht'
+>>> s1 = 'helo'
+>>> for c in s1:
+...     print(c)
+...
+h
+e
+l
+o
+>>> for c in s1:
+...     print(c, end = ' ')
+...
+h e l o >>>
+>>> s
+'this is my test'
+>>> t = s.upper()
+>>> t
+'THIS IS MY TEST'
+>>> s
+'this is my test'
+>>> s == t
+False
+>>> s is t
+False
+>>> t
+'THIS IS MY TEST'
+>>> t.lower()
+'this is my test'
+>>> t.lower() == s
+True
+>>> 'is' in s
+True
+>>> 's' in s
+True
+>>> 'test' in s
+True
+>>> s.index('s')
+3
+>>> type(s)
+<class 'str'>
+>>> s = 123
+>>> type(s)
+<class 'int'>
+>>> t
+'THIS IS MY TEST'
+>>> s = t.lower()
+>>> s
+'this is my test'
+>>> type(s)
+<class 'str'>
+>>> s2 ='                        '
+>>> s = s + s2
+>>> s
+'this is my test                        '
+>>> s.strip()
+'this is my test'
+>>> s
+'this is my test                        '
+>>> s = s.strip()
+>>> s
+'this is my test'
+>>> s.find('test')
+11
+>>> for i in f:
+	print(i)
+
+	
+Why should you learn to write programs?
+
+Writing programs (or programming) is a very creative and rewarding activity. 
+
+You can write programs for many reasons;ranging from making your living to solving a difficult data analysis problem to having fun to helping
+
+someone else solve a problem.  
+
+This book assumes that everyone needs to know how to program, and that once 
+
+you know how to program you will figure out what you want to do with your newfound skills.
+>>> f.close()
+>>> f = open('intro.txt')
+>>> f.read()
+'Why should you learn to write programs?\nWriting programs (or programming) is a very creative and rewarding activity. \nYou can write programs for many reasons;ranging from making your living to solving a difficult data analysis problem to having fun to helping\nsomeone else solve a problem.  \nThis book assumes that everyone needs to know how to program, and that once \nyou know how to program you will figure out what you want to do with your newfound skills.'
+>>> f.read()
+''
+>>> dir(f)
+['_CHUNK_SIZE', '__class__', '__del__', '__delattr__', '__dict__', '__dir__', '__doc__', '__enter__', '__eq__', '__exit__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__lt__', '__ne__', '__new__', '__next__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '_checkClosed', '_checkReadable', '_checkSeekable', '_checkWritable', '_finalizing', 'buffer', 'close', 'closed', 'detach', 'encoding', 'errors', 'fileno', 'flush', 'isatty', 'line_buffering', 'mode', 'name', 'newlines', 'read', 'readable', 'readline', 'readlines', 'reconfigure', 'seek', 'seekable', 'tell', 'truncate', 'writable', 'write', 'write_through', 'writelines']
+>>> f.tell()
+462
+>>> f.seek(0, 0)
+0
+>>> f.tell()
+0
+>>> f.readline()
+'Why should you learn to write programs?\n'
+>>> type(f)
+<class '_io.TextIOWrapper'>
+>>> f.readline()
+'Writing programs (or programming) is a very creative and rewarding activity. \n'
+>>> f.readline()
+'You can write programs for many reasons;ranging from making your living to solving a difficult data analysis problem to having fun to helping\n'
+>>> f.readline()
+'someone else solve a problem.  \n'
+>>> f.readline()
+'This book assumes that everyone needs to know how to program, and that once \n'
+>>> f.readline()
+'you know how to program you will figure out what you want to do with your newfound skills.'
+>>> f.tell()
+462
+>>> f.seek(0,0)
+0
+>>> for line in f:
+	print(line, end = ' ')
+
+	
+Why should you learn to write programs?
+ Writing programs (or programming) is a very creative and rewarding activity. 
+ You can write programs for many reasons;ranging from making your living to solving a difficult data analysis problem to having fun to helping
+ someone else solve a problem.  
+ This book assumes that everyone needs to know how to program, and that once 
+ you know how to program you will figure out what you want to do with your newfound skills. 
+>>> f.tell()
+462
+>>> f.read()
+''
+>>> f.seek(0,0)
+0
+>>> f.read(100)
+'Why should you learn to write programs?\nWriting programs (or programming) is a very creative and rew'
+>>> f.tell()
+101
+>>> f.read()
+'arding activity. \nYou can write programs for many reasons;ranging from making your living to solving a difficult data analysis problem to having fun to helping\nsomeone else solve a problem.  \nThis book assumes that everyone needs to know how to program, and that once \nyou know how to program you will figure out what you want to do with your newfound skills.'
+>>> f.seek()
+Traceback (most recent call last):
+  File "<pyshell#32>", line 1, in <module>
+    f.seek()
+TypeError: seek() takes at least 1 argument (0 given)
+>>> f.seek(0,0)
+0
+>>> c = 0
+>>> for i in f:
+	c = c + 1
+
+	
+>>> c
+6
+>>> import re
+>>> re
+<module 're' from 'C:\\Python37\\lib\\re.py'>
+>>> line = 'this is my test expression.'
+>>> p = re.compile('ion')
+>>> p.findall(line)
+['ion']
+>>> p = re.compile('is*')
+>>> p.findall(line)
+['is', 'is', 'i']
+>>> p = re.compile('is{2,}')
+>>> p.findall(line)
+[]
+>>> p = re.compile('is{2}')
+>>> p.findall(line)
+[]
+>>> p = re.compile('is?')
+>>> p.findall(line)
+['is', 'is', 'i']
+>>> mat = p.search(line)
+>>> type(mat)
+<class 're.Match'>
+>>> mat.start()
+2
+>>> p
+re.compile('is?')
+>>> p = re.compile('ion')
+>>> m = p.search(line)
+>>> m.start()
+23
+>>> m.span()
+(23, 26)
+>>> p.match(line)
+>>> type(p.match(line))
+<class 'NoneType'>
+>>> m = p.match(line)
+>>> m
+>>> p = re.compile('this')
+>>> m = p.match(line)
+>>> type(m)
+<class 're.Match'>
+>>> m.span()
+(0, 4)
+>>> 

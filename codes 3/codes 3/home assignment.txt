@@ -1,0 +1,26 @@
+Task 1:
+------
+(based on Lecture 2 + 3, i.e. file opening, reading and csv file reading and Lists, ofcoruse loops and conditions are also involved). 
+
+You will read the csv file students.csv. It is list of all the students for a course, with their group id in the last column (for example iaib22, iaib21 and so on)
+Your program should have following features;
+1. upon execution after reading the csv file, it should give me all the group ids in a nice readable way (those students who are not part of any group, assign them group of 'open university')
+2. secondly, within the execution, the program should ask me the which group I would like to see in detail, say I type iadb40 and it should return me names of all student in this group (in list from or simple output statments).  
+3. after step 2, program should continue in the step 2, means I should be asked again after every group is displayed, which group I would like to see , and until i type 'q' then the program should quit. 
+4. remember that I would like to enter case-insensitive group names so your program should handle both upper case and lower case letters without problem. 
+
+
+
+
+
+Task 2:
+------
+develop your game Tic-Tac-Toe where two players can play against each other. Represent Tic-Tac-Toe Board with the dictionary. Each iteration the program should ask for player 1 input and then checks for winning then then ask for player 2 input and again checking for win condition. The game goes on until any player wins or the game is a tie. 
+
+board should be mapped (and displayed) in the following pattren.
+
+top-left | top-mid    | top-right
+---------|------------|----------
+mid-left |   mid      | mid-right
+---------|------------|----------
+low-left | low-mid    | mid-right

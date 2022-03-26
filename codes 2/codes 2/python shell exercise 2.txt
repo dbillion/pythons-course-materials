@@ -1,0 +1,283 @@
+Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+============== RESTART: C:\Users\tausi\Desktop\codes 2\testfile.py =============
+Romeo and Juliet is a tragedy written by William Shakespeare early in his career about two young star-crossed lovers whose deaths ultimately reconcile their feuding families. It was among Shakespeare's most popular plays during his lifetime and along with Hamlet, is one of his most frequently performed plays. Today, the title characters are regarded as archetypal young lovers. 
+
+Romeo and Juliet belongs to a tradition of tragic romances stretching back to antiquity. The plot is based on an Italian tale translated into verse as The Tragical History of Romeus and Juliet by Arthur Brooke in 1562 and retold in prose in Palace of Pleasure by William Painter in 1567. Shakespeare borrowed heavily from both but expanded the plot by developing a number of supporting characters, particularly Mercutio and Paris. Believed to have been written between 1591 and 1595, the play was first published in a quarto version in 1597. The text of the first quarto version was of poor quality, however, and later editions corrected the text to conform more closely with Shakespeare's original. 
+
+Shakespeare's use of his poetic dramatic structure (especially effects such as switching between comedy and tragedy to heighten tension, his expansion of minor characters, and his use of sub-plots to embellish the story) has been praised as an early sign of his dramatic skill. The play ascribes different poetic forms to different characters, sometimes changing the form as the character develops. Romeo, for example, grows more adept at the sonnet over the course of the play. 
+
+Romeo and Juliet has been adapted numerous times for stage, film, musical, and opera venues. During the English Restoration, it was revived and heavily revised by William Davenant. David Garrick's 18th-century version also modified several scenes, removing material then considered indecent, and Georg Benda's Romeo und Julie omitted much of the action and added a happy ending. Performances in the 19th century, including Charlotte Cushman's, restored the original text and focused on greater realism. John Gielgud's 1935 version kept very close to Shakespeare's text and used Elizabethan costumes and staging to enhance the drama. In the 20th and into the 21st century, the play has been adapted in versions as diverse as George Cukor's 1936 film Romeo and Juliet, Franco Zeffirelli's 1968 version Romeo and Juliet, and Baz Luhrmann's 1996 MTV-inspired Romeo + Juliet. 
+>>> 
+======================================== RESTART: C:\Users\tausi\Desktop\codes 2\testfile.py ========================================
+Romeo and Juliet is a tragedy written by William Shakespeare early in his career about two young star-crossed lovers whose deaths ultimately reconcile their feuding families. It was among Shakespeare's most popular plays during his lifetime and along with Hamlet, is one of his most frequently performed plays. Today, the title characters are regarded as archetypal young lovers. 
+
+Romeo and Juliet belongs to a tradition of tragic romances stretching back to antiquity. The plot is based on an Italian tale translated into verse as The Tragical History of Romeus and Juliet by Arthur Brooke in 1562 and retold in prose in Palace of Pleasure by William Painter in 1567. Shakespeare borrowed heavily from both but expanded the plot by developing a number of supporting characters, particularly Mercutio and Paris. Believed to have been written between 1591 and 1595, the play was first published in a quarto version in 1597. The text of the first quarto version was of poor quality, however, and later editions corrected the text to conform more closely with Shakespeare's original. 
+
+Shakespeare's use of his poetic dramatic structure (especially effects such as switching between comedy and tragedy to heighten tension, his expansion of minor characters, and his use of sub-plots to embellish the story) has been praised as an early sign of his dramatic skill. The play ascribes different poetic forms to different characters, sometimes changing the form as the character develops. Romeo, for example, grows more adept at the sonnet over the course of the play. 
+
+Romeo and Juliet has been adapted numerous times for stage, film, musical, and opera venues. During the English Restoration, it was revived and heavily revised by William Davenant. David Garrick's 18th-century version also modified several scenes, removing material then considered indecent, and Georg Benda's Romeo und Julie omitted much of the action and added a happy ending. Performances in the 19th century, including Charlotte Cushman's, restored the original text and focused on greater realism. John Gielgud's 1935 version kept very close to Shakespeare's text and used Elizabethan costumes and staging to enhance the drama. In the 20th and into the 21st century, the play has been adapted in versions as diverse as George Cukor's 1936 film Romeo and Juliet, Franco Zeffirelli's 1968 version Romeo and Juliet, and Baz Luhrmann's 1996 MTV-inspired Romeo + Juliet. 
+4
+>>> 
+======================================== RESTART: C:\Users\tausi\Desktop\codes 2\testfile.py ========================================
+Romeo and Juliet is a tragedy written by William Shakespeare early in his career about two young star-crossed lovers whose deaths ultimately reconcile their feuding families. It was among Shakespeare's most popular plays during his lifetime and along with Hamlet, is one of his most frequently performed plays. Today, the title characters are regarded as archetypal young lovers. 
+
+>>> text.readline()
+Traceback (most recent call last):
+  File "<pyshell#0>", line 1, in <module>
+    text.readline()
+ValueError: I/O operation on closed file.
+>>> text
+<_io.TextIOWrapper name='C:\\Users\\tausi\\Desktop\\codes 2\\rj.txt' mode='r' encoding='cp1252'>
+>>> text.read()
+Traceback (most recent call last):
+  File "<pyshell#2>", line 1, in <module>
+    text.read()
+ValueError: I/O operation on closed file.
+>>> 
+======================================== RESTART: C:\Users\tausi\Desktop\codes 2\testfile.py ========================================
+Romeo and Juliet is a tragedy written by William Shakespeare early in his career about two young star-crossed lovers whose deaths ultimately reconcile their feuding families. It was among Shakespeare's most popular plays during his lifetime and along with Hamlet, is one of his most frequently performed plays. Today, the title characters are regarded as archetypal young lovers. 
+
+>>> text.read()
+"Romeo and Juliet belongs to a tradition of tragic romances stretching back to antiquity. The plot is based on an Italian tale translated into verse as The Tragical History of Romeus and Juliet by Arthur Brooke in 1562 and retold in prose in Palace of Pleasure by William Painter in 1567. Shakespeare borrowed heavily from both but expanded the plot by developing a number of supporting characters, particularly Mercutio and Paris. Believed to have been written between 1591 and 1595, the play was first published in a quarto version in 1597. The text of the first quarto version was of poor quality, however, and later editions corrected the text to conform more closely with Shakespeare's original. \nShakespeare's use of his poetic dramatic structure (especially effects such as switching between comedy and tragedy to heighten tension, his expansion of minor characters, and his use of sub-plots to embellish the story) has been praised as an early sign of his dramatic skill. The play ascribes different poetic forms to different characters, sometimes changing the form as the character develops. Romeo, for example, grows more adept at the sonnet over the course of the play. \nRomeo and Juliet has been adapted numerous times for stage, film, musical, and opera venues. During the English Restoration, it was revived and heavily revised by William Davenant. David Garrick's 18th-century version also modified several scenes, removing material then considered indecent, and Georg Benda's Romeo und Julie omitted much of the action and added a happy ending. Performances in the 19th century, including Charlotte Cushman's, restored the original text and focused on greater realism. John Gielgud's 1935 version kept very close to Shakespeare's text and used Elizabethan costumes and staging to enhance the drama. In the 20th and into the 21st century, the play has been adapted in versions as diverse as George Cukor's 1936 film Romeo and Juliet, Franco Zeffirelli's 1968 version Romeo and Juliet, and Baz Luhrmann's 1996 MTV-inspired Romeo + Juliet. "
+>>> text.read()
+''
+>>> text.tell()
+2436
+>>> text.seek(0, 0)
+0
+>>> text.read(100)
+'Romeo and Juliet is a tragedy written by William Shakespeare early in his career about two young sta'
+>>> text.close()
+>>> f = open('devices.txt')
+>>> for i in f:
+	print(i)
+
+	
+Cisco 819 Router
+
+Cisco 881 Router
+
+Cisco 888 Router
+
+Cisco 1100 Router
+
+Cisco 4321 Router
+
+Cisco 4331 Router
+
+Cisco 4351 Router
+
+Cisco 2960 Catalyst Switch
+
+Cisco 3850 Catalyst Switch
+
+Cisco 7700 Nexus Switch
+
+Cisco Meraki MS220-8 Cloud Managed Switch
+
+Cisco Meraki MX64W Security Appliance
+
+Cisco Meraki MX84 Security Appliance
+
+Cisco Meraki MC74 VoIP Phone
+
+Cisco 3860 Catalyst Switch
+
+>>> for i in f:
+	print(i.strip())
+
+	
+>>> 
+>>> f.seek(0,0)
+0
+>>> for i in f:
+	print(i.strip())
+
+	
+Cisco 819 Router
+Cisco 881 Router
+Cisco 888 Router
+Cisco 1100 Router
+Cisco 4321 Router
+Cisco 4331 Router
+Cisco 4351 Router
+Cisco 2960 Catalyst Switch
+Cisco 3850 Catalyst Switch
+Cisco 7700 Nexus Switch
+Cisco Meraki MS220-8 Cloud Managed Switch
+Cisco Meraki MX64W Security Appliance
+Cisco Meraki MX84 Security Appliance
+Cisco Meraki MC74 VoIP Phone
+Cisco 3860 Catalyst Switch
+>>> import re
+>>> s = re.search('fox', 'a quick brown fox jumps.')
+>>> s
+<re.Match object; span=(14, 17), match='fox'>
+>>> print(s)
+<re.Match object; span=(14, 17), match='fox'>
+>>> s
+<re.Match object; span=(14, 17), match='fox'>
+>>> s.group()
+'fox'
+>>> s = re.search('fox', 'a quick brown Fox jumps.')
+>>> s
+>>> type(s)
+<class 'NoneType'>
+>>> s = re.search('fox', 'a quick brown Fox jumps.', re.IGNORECASE)
+>>> s
+<re.Match object; span=(14, 17), match='Fox'>
+>>> s = re.search('fox', 'a quick brown Fox jumps.')
+>>> s
+>>> s = re.search(r'{3}\w', 'a quick brown Fox jumps.', re.IGNORECASE)
+Traceback (most recent call last):
+  File "<pyshell#32>", line 1, in <module>
+    s = re.search(r'{3}\w', 'a quick brown Fox jumps.', re.IGNORECASE)
+  File "C:\Python3\lib\re.py", line 201, in search
+    return _compile(pattern, flags).search(string)
+  File "C:\Python3\lib\re.py", line 304, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "C:\Python3\lib\sre_compile.py", line 764, in compile
+    p = sre_parse.parse(p, flags)
+  File "C:\Python3\lib\sre_parse.py", line 948, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+  File "C:\Python3\lib\sre_parse.py", line 443, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "C:\Python3\lib\sre_parse.py", line 668, in _parse
+    raise source.error("nothing to repeat",
+re.error: nothing to repeat at position 0
+>>> s = re.search(r'\w{3}', 'a quick brown Fox jumps.', re.IGNORECASE)
+>>> s
+<re.Match object; span=(2, 5), match='qui'>
+>>> s = re.search(r' \w{3} ', 'a quick brown Fox jumps.', re.IGNORECASE)
+>>> s
+<re.Match object; span=(13, 18), match=' Fox '>
+>>> text = 'I saw a pengiun which was clapping'
+>>> s = re.search(text)
+Traceback (most recent call last):
+  File "<pyshell#38>", line 1, in <module>
+    s = re.search(text)
+TypeError: search() missing 1 required positional argument: 'string'
+>>> s = re.search(r'p.ing', text)
+>>> s
+<re.Match object; span=(29, 34), match='pping'>
+>>> s = re.search(r'p.ng', text)
+>>> s
+<re.Match object; span=(8, 12), match='peng'>
+>>> s = re.findall(r'p.ng', text)
+>>> s
+['peng', 'ping']
+>>> text
+'I saw a pengiun which was clapping'
+>>> 
+>>> 
+>>> s = re.search(r'python', 'this is python class')
+>>> s
+<re.Match object; span=(8, 14), match='python'>
+>>> s = re.search(r'python', 'this is Python class')
+>>> s
+>>> s = re.search(r'[pP]ython', 'this is Python class')
+>>> s
+<re.Match object; span=(8, 14), match='Python'>
+>>> s = re.search(r'[a-z]way', 'this highway is too long way from home')
+>>> 
+>>> s
+<re.Match object; span=(8, 12), match='hway'>
+>>> s = re.search(r'[a-z]+way', 'this highway is too long way from home')
+>>> s
+<re.Match object; span=(5, 12), match='highway'>
+>>> s = re.findall(r'[a-z]+way', 'this highway is too long way from home')
+>>> s
+['highway']
+>>> s = re.findall(r'[a-z ]+way', 'this highway is too long way from home')
+>>> s
+['this highway is too long way']
+>>> msg = 'lets meet at the keskus @2pm'.
+SyntaxError: invalid syntax
+>>> msg = 'lets meet at the keskus @2pm'
+>>> s = re.search(r'@\S+
+	      
+SyntaxError: EOL while scanning string literal
+>>> s = re.search(r'@\S+', msg)
+>>> s
+<re.Match object; span=(24, 28), match='@2pm'>
+>>> email = '''
+Hello all,
+this is my phone number in estonia +372-54315029.
+you can also reach me on 54315030.
+Please do not come to my office, just call me 666777.
+Thank you.
+'''
+>>> print(email)
+
+Hello all,
+this is my phone number in estonia +372-54315029.
+you can also reach me on 54315030.
+Please do not come to my office, just call me 666777.
+Thank you.
+
+>>> email = '''
+Hello all,
+this is my phone number in estonia +372-54315029.
+you can also reach me on 54315030.
+Please do not come to my office, just call me 6667778.
+Thank you.
+'''
+>>> print(email)
+
+Hello all,
+this is my phone number in estonia +372-54315029.
+you can also reach me on 54315030.
+Please do not come to my office, just call me 6667778.
+Thank you.
+
+>>> fone = re.compile(r'\+\d{3}-\d{8}|\d{7,8}')
+>>> fone.pattern
+'\\+\\d{3}-\\d{8}|\\d{7,8}'
+>>> s = fone.findall(email)
+>>> s
+['+372-54315029', '54315030', '6667778']
+>>> fone = re.compile(r'(\+\d{3})-(\d{8})|(\d{7,8})')
+>>> fone.pattern
+'(\\+\\d{3})-(\\d{8})|(\\d{7,8})'
+>>> s = fone.findall(email)
+>>> s
+[('+372', '54315029', ''), ('', '', '54315030'), ('', '', '6667778')]
+>>> s = re.search(fone, email)
+>>> s
+<re.Match object; span=(47, 60), match='+372-54315029'>
+>>> s.group(0)
+'+372-54315029'
+>>> s.group(1)
+'+372'
+>>> s.group(2)
+'54315029'
+>>> s.groups()
+('+372', '54315029', None)
+>>> country, cell, n = s.groups()
+>>> country
+'+372'
+>>> cell
+'54315029'
+>>> n
+>>> country = s.group(1)
+>>> country
+'+372'
+>>> s = re.seach(r'(\w+) (\w+)', 'Tauseef Ahmed')
+Traceback (most recent call last):
+  File "<pyshell#100>", line 1, in <module>
+    s = re.seach(r'(\w+) (\w+)', 'Tauseef Ahmed')
+AttributeError: module 're' has no attribute 'seach'
+>>> s = re.search(r'(\w+) (\w+)', 'Tauseef Ahmed')
+>>> s
+<re.Match object; span=(0, 13), match='Tauseef Ahmed'>
+>>> s.group(0)
+'Tauseef Ahmed'
+>>> firstname = s.group(1)
+>>> second = s.group(2)
+>>> firstname
+'Tauseef'
+>>> second
+'Ahmed'
+>>> 

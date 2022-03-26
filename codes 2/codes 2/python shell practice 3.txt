@@ -1,0 +1,47 @@
+Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> import re
+>>> rs = re.search('fox', 'a quick brow fox')
+>>> print(rs)
+<re.Match object; span=(13, 16), match='fox'>
+>>> rs = re.search('fon', 'a quick brow fox')
+>>> print(rs)
+None
+>>> rs = re.search(r'a.r', 'the alram was generated at the alert')
+>>> print(rs)
+<re.Match object; span=(4, 7), match='alr'>
+>>> rs = re.search(r'p.ng', 'the penguin was clapping')
+>>> rs
+<re.Match object; span=(4, 8), match='peng'>
+>>> rs = re.findall(r'p.ng', 'the penguin was clapping')
+>>> rs
+['peng', 'ping']
+>>> rs = re.search(r'pyton', 'this is python programming class')
+>>> rs
+>>> rs = re.search(r'python', 'this is python programming class')
+>>> rs
+<re.Match object; span=(8, 14), match='python'>
+>>> rs = re.search(r'python', 'this is Python Programming class')
+>>> rs
+>>> rs = re.search(r'[pP]ython', 'this is Python Programming class')
+>>> rs
+<re.Match object; span=(8, 14), match='Python'>
+>>> rs = re.findall(r'[pP]ython', 'this is Python python class')
+>>> rs
+['Python', 'python']
+>>> rs = re.search(r'[a-z]way', 'this highway is long way from home')
+>>> rs
+<re.Match object; span=(8, 12), match='hway'>
+>>> rs = re.findall(r'[a-z]way', 'this highway is long way from home')
+>>> rs
+['hway']
+>>> rs = re.findall(r'cat|dog', 'She likes cats but not dogs')
+>>> rs
+['cat', 'dog']
+>>> msg = 'lets meet at uni campus @2pm. if not contact me at xyz@gmail.com'
+>>> rs = re.search(r'\S+@\S+', msg)
+>>> rs
+<re.Match object; span=(51, 64), match='xyz@gmail.com'>
+>>> rs.group()
+'xyz@gmail.com'
+>>> 

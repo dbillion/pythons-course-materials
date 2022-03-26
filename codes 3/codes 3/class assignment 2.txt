@@ -1,0 +1,4 @@
+write separate functions for each task, i.e. max, min, sort, on a list. compare your results with built-in max, min and method sort. 
+we will take one step further in our algorithm development skills, write the code to find out the second hightest value in the list. Remember!! no substitution, elimination nor  changing the order is not allowed in the main list. 
+
+

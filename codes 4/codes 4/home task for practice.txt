@@ -1,0 +1,8 @@
+design and develop a two player gui based tic tack toe game. 
+
+
+design and develop a simple text editor. 
+
+
+design and develop a simple calculator. 
+

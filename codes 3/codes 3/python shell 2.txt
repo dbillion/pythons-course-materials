@@ -1,0 +1,725 @@
+>>> l = []
+>>> l2 = [1, 3, 5, 7]
+>>> l3 = [2, 4, 6, 8, 10]
+>>> type(l)
+<class 'list'>
+>>> l2
+[1, 3, 5, 7]
+>>> l3
+[2, 4, 6, 8, 10]
+>>> l = list(range(5))
+>>> l
+[0, 1, 2, 3, 4]
+>>> len(l)
+5
+>>> l[1]
+1
+>>> l[-1]
+4
+>>> l[1+1]
+2
+>>> l3
+[2, 4, 6, 8, 10]
+>>> max(l3)
+10
+>>> min(l3)
+2
+>>> sum(l3)
+30
+>>> l = [1, 'abc']
+>>> sum(l)
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+>>> 
+>>> max(l)
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+TypeError: '>' not supported between instances of 'str' and 'int'
+>>> l = ['a', 'b','c']
+>>> max(l)
+'c'
+>>> min(l)
+'a'
+>>> sum(l)
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+>>> l4 = ['monday', 'tuesday', 'wednesday']
+>>> max(l4)
+'wednesday'
+>>> l
+['a', 'b', 'c']
+>>> l4
+['monday', 'tuesday', 'wednesday']
+>>> l3
+[2, 4, 6, 8, 10]
+>>> for i in l3:
+    print(i)
+    
+2
+4
+6
+8
+10
+>>> 8 in l3
+True
+>>> 9 in l3
+False
+>>> 9 not in l3
+True
+>>> 'monday' in l4
+True
+>>> st = 'hello'
+>>> st[1] = 'x'
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> l3
+[2, 4, 6, 8, 10]
+>>> l3[2] = 45
+>>> l3
+[2, 4, 45, 8, 10]
+>>> "this is a string"
+'this is a string'
+>>> "this is a string'
+  File "<pyshell>", line 1
+    "this is a string'
+                     ^
+SyntaxError: EOL while scanning string literal
+>>> "this is a string 'this' is my string"
+"this is a string 'this' is my string"
+>>> 'this is a string "this" is my string'
+'this is a string "this" is my string'
+>>> st[1]
+'e'
+>>> l3
+[2, 4, 45, 8, 10]
+>>> len(l3)
+5
+>>> l 
+['a', 'b', 'c']
+>>> l [1] = [1, 2, 3, 4]
+>>> l
+['a', [1, 2, 3, 4], 'c']
+>>> len(l)
+3
+>>> l[0]
+'a'
+>>> l[1]
+[1, 2, 3, 4]
+>>> l[2]
+'c'
+>>> l[1][2]
+3
+>>> l
+['a', [1, 2, 3, 4], 'c']
+>>> l = [1, 2, 3]
+>>> l * 2
+[1, 2, 3, 1, 2, 3]
+>>> l * 3
+[1, 2, 3, 1, 2, 3, 1, 2, 3]
+>>> l
+[1, 2, 3]
+>>> l + l3
+[1, 2, 3, 2, 4, 45, 8, 10]
+>>> l2 = l + l3
+>>> l2
+[1, 2, 3, 2, 4, 45, 8, 10]
+>>> l[:]
+[1, 2, 3]
+>>> l2[:]
+[1, 2, 3, 2, 4, 45, 8, 10]
+>>> l2[:5]
+[1, 2, 3, 2, 4]
+>>> l2[::3]
+[1, 2, 8]
+>>> [start:end:increment]
+  File "<pyshell>", line 1
+    [start:end:increment]
+          ^
+SyntaxError: invalid syntax
+>>> 
+>>> 
+>>> 
+>>> 
+>>> l2[::100]
+[1]
+>>> l2[::-1]
+[10, 8, 45, 4, 2, 3, 2, 1]
+>>> type(l2)
+<class 'list'>
+>>> dir(l2)
+['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+>>> l
+[1, 2, 3]
+>>> 
+>>> 
+>>> 
+>>> l[1]
+2
+>>> l[3]
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+IndexError: list index out of range
+>>> 
+>>> 
+>>> 
+>>> l
+[1, 2, 3]
+>>> l.append(4)
+>>> l
+[1, 2, 3, 4]
+>>> l
+[1, 2, 3, 4]
+>>> l3
+[2, 4, 45, 8, 10]
+>>> l2
+[1, 2, 3, 2, 4, 45, 8, 10]
+>>> l4
+['monday', 'tuesday', 'wednesday']
+>>> l5 = [9, 8, 7]
+>>> l
+[1, 2, 3, 4]
+>>> l.extend(l5)
+>>> l
+[1, 2, 3, 4, 9, 8, 7]
+>>> l5
+[9, 8, 7]
+>>> l
+[1, 2, 3, 4, 9, 8, 7]
+>>> l5.insert(2, 45)
+>>> l5
+[9, 8, 45, 7]
+>>> l5.index(7)
+3
+>>> l4.index('wednesday')
+2
+>>> l5.pop()
+7
+>>> l3
+[2, 4, 45, 8, 10]
+>>> l3.pop(2)
+45
+>>> l3
+[2, 4, 8, 10]
+>>> l3.clear()
+>>> l
+[1, 2, 3, 4, 9, 8, 7]
+>>> l3
+[]
+>>> l4
+['monday', 'tuesday', 'wednesday']
+>>> l2
+[1, 2, 3, 2, 4, 45, 8, 10]
+>>> l2.count(2)
+2
+>>> l2.append(2)
+>>> l2
+[1, 2, 3, 2, 4, 45, 8, 10, 2]
+>>> l2.count(2)
+3
+>>> l2.index(2)
+1
+>>> l2
+[1, 2, 3, 2, 4, 45, 8, 10, 2]
+>>> l2.sort()
+>>> l2
+[1, 2, 2, 2, 3, 4, 8, 10, 45]
+>>> l2.reverse()
+>>> l2
+[45, 10, 8, 4, 3, 2, 2, 2, 1]
+>>> l2[::-1]
+[1, 2, 2, 2, 3, 4, 8, 10, 45]
+>>> l2
+[45, 10, 8, 4, 3, 2, 2, 2, 1]
+>>> l2.reverse()
+>>> l2
+[1, 2, 2, 2, 3, 4, 8, 10, 45]
+>>> l2[-1]
+45
+>>> max(l2)
+45
+>>> del l2[2:4]
+>>> l2
+[1, 2, 3, 4, 8, 10, 45]
+>>> del l2
+>>> l2
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+NameError: name 'l2' is not defined
+>>> l
+[1, 2, 3, 4, 9, 8, 7]
+>>> l3
+[]
+>>> l3.append(1)
+>>> l3
+[1]
+>>> s = 'abc'
+>>> t = 'abc'
+>>> s is t
+True
+>>> s == t
+True
+>>> l = [1, 2, 3]
+>>> l2 = [1, 2, 3]
+>>> l is l2
+False
+>>> l == l2
+True
+>>> st = 'this is a test string'
+>>> lst = st.split()
+>>> lst
+['this', 'is', 'a', 'test', 'string']
+>>> d = ' '
+>>> type(d)
+<class 'str'>
+>>> d.join(lst)
+'this is a test string'
+>>> l
+[1, 2, 3]
+>>> l3 = l
+>>> l3
+[1, 2, 3]
+>>> l3 is l
+True
+>>> import numpy 
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+ModuleNotFoundError: No module named 'numpy'
+>>> l = [2, 4, 8, 16, 32, 64, 128]
+>>> for i in range(10):
+    temp = []
+    temp.append((i+1) ** 2)
+    
+>>> temp
+[100]
+>>> for i in range(10):
+    temp = []
+    temp.append((i+1) ** 2)
+    print(temp)
+    
+[1]
+[4]
+[9]
+[16]
+[25]
+[36]
+[49]
+[64]
+[81]
+[100]
+>>> temp = []   
+>>> for i in range(10):
+    temp.append((i+1) ** 2)
+    
+>>> temp
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+>>> l = [i]
+>>> l = [i]
+>>> l = [i**2 for i in range(1, 20)]
+>>> l
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361]
+>>> l = [i**2 for i in range(1, 1001, 9)]
+>>> l
+[1, 100, 361, 784, 1369, 2116, 3025, 4096, 5329, 6724, 8281, 10000, 11881, 13924, 16129, 18496, 21025, 23716, 26569, 29584, 32761, 36100, 39601, 43264, 47089, 51076, 55225, 59536, 64009, 68644, 73441, 78400, 83521, 88804, 94249, 99856, 105625, 111556, 117649, 123904, 130321, 136900, 143641, 150544, 157609, 164836, 172225, 179776, 187489, 195364, 203401, 211600, 219961, 228484, 237169, 246016, 255025, 264196, 273529, 283024, 292681, 302500, 312481, 322624, 332929, 343396, 354025, 364816, 375769, 386884, 398161, 409600, 421201, 432964, 444889, 456976, 469225, 481636, 494209, 506944, 519841, 532900, 546121, 559504, 573049, 586756, 600625, 614656, 628849, 643204, 657721, 672400, 687241, 702244, 717409, 732736, 748225, 763876, 779689, 795664, 811801, 828100, 844561, 861184, 877969, 894916, 912025, 929296, 946729, 964324, 982081, 1000000]
+>>> 
+>>> 
+>>> 
+>>> 
+>>> t = (1, 2, 3)
+>>> t
+(1, 2, 3)
+>>> type(t)
+<class 'tuple'>
+>>> t1 = (1)
+>>> type(t1)
+<class 'int'>
+>>> t1 = 1, 
+>>> type(t1)
+<class 'tuple'>
+>>> t
+(1, 2, 3)
+>>> t[0]
+1
+>>> t[3]
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+IndexError: tuple index out of range
+>>> t[2]
+3
+>>> t[2] = 4
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> t
+(1, 2, 3)
+>>> t = tuple(range(1, 5))
+>>> t
+(1, 2, 3, 4)
+>>> t.index(3)
+2
+>>> t.count(2)
+1
+>>> max(t)
+4
+>>> min(t)
+1
+>>> sum(t)
+10
+>>> t * 3
+(1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4)
+>>> t + t
+(1, 2, 3, 4, 1, 2, 3, 4)
+>>> t = t + t
+>>> t
+(1, 2, 3, 4, 1, 2, 3, 4)
+>>> t[2] = 56
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> l = list(2, 4, 8)
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+TypeError: list expected at most 1 arguments, got 3
+>>> l = list([2, 4, 8])
+>>> l
+[2, 4, 8]
+>>> t = tuple(l)
+>>> t
+(2, 4, 8)
+>>> sorted(t)
+[2, 4, 8]
+>>> t
+(2, 4, 8)
+>>> t1 = tuple()
+>>> t1
+()
+>>> t1[0] = 2
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> t
+(2, 4, 8)
+>>> t1
+()
+>>> t = (1, 2, [3, 4])
+>>> t
+(1, 2, [3, 4])
+>>> type(t)
+<class 'tuple'>
+>>> t[2][2] = 42
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+IndexError: list assignment index out of range
+>>> t[2][1] = 42
+>>> 
+>>> t
+(1, 2, [3, 42])
+>>> type(t)
+<class 'tuple'>
+>>> len(t)
+3
+>>> d = dict(name = 'Jones', age = 40)
+>>> d
+{'name': 'Jones', 'age': 40}
+>>> l = [1, 3, 4]
+>>> l2 = ['a', 'b', 'c']
+>>> list(zip(l,l2))
+[(1, 'a'), (3, 'b'), (4, 'c')]
+>>> zip(l,l2))
+  File "<pyshell>", line 1
+    zip(l,l2))
+             ^
+SyntaxError: invalid syntax
+>>> zip(l,l2)
+<zip object at 0x000002A10E111448>
+>>> dict(zip(l,l2))
+{1: 'a', 3: 'b', 4: 'c'}
+>>> d[age]
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+NameError: name 'age' is not defined
+>>> d
+{'name': 'Jones', 'age': 40}
+>>> d['age']
+40
+>>> d
+{'name': 'Jones', 'age': 40}
+>>> list(zip([1, 2, 3, 4], (9, 7)))
+[(1, 9), (2, 7)]
+>>> d = dict(zip(l,l2))
+>>> d
+{1: 'a', 3: 'b', 4: 'c'}
+>>> 3 in d
+True
+>>> 'a' in d
+False
+>>> 4 in d
+True
+>>> 5 in d
+False
+>>> d.values()
+dict_values(['a', 'b', 'c'])
+>>> 'a' in d.values()
+True
+>>> len(d)
+3
+>>> d.keys()
+dict_keys([1, 3, 4])
+>>> d.values()
+dict_values(['a', 'b', 'c'])
+>>> d.items()
+dict_items([(1, 'a'), (3, 'b'), (4, 'c')])
+>>> d2 = d.copy()
+>>> d2
+{1: 'a', 3: 'b', 4: 'c'}
+>>> d2.clear()
+>>> d2
+{}
+>>> type(d2)
+<class 'dict'>
+>>> d2.update(d)
+>>> d2
+{1: 'a', 3: 'b', 4: 'c'}
+>>> d == d2
+True
+>>> d2[5]
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+KeyError: 5
+>>> d2.get(5)
+>>> print(d2.get(5))
+None
+>>> d2.get(5, 0)
+0
+>>> d2.get(5, 'key not found')
+'key not found'
+>>> d2.get(3, 'key not found')
+'b'
+>>> d2.pop()
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+TypeError: pop expected at least 1 arguments, got 0
+>>> d2.pop(5)
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+KeyError: 5
+>>> d2.pop(5, 'not found')
+'not found'
+>>> d.pop(6)
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+KeyError: 6
+>>> d2.pop(5, 'not found')
+'not found'
+>>> d2.pop(3)
+'b'
+>>> d2
+{1: 'a', 4: 'c'}
+>>> d2.popitem()
+(4, 'c')
+>>> d.popitem()
+(4, 'c')
+>>> d.popitem()
+(3, 'b')
+>>> d.popitem()
+(1, 'a')
+>>> d
+{}
+>>> d
+{}
+>>> d.setdefault(1, 'a')
+'a'
+>>> d
+{1: 'a'}
+>>> d.setdefault(2, 'b')
+'b'
+>>> d
+{1: 'a', 2: 'b'}
+>>> d.setdefault(2, 'c')
+'b'
+>>> d
+{1: 'a', 2: 'b'}
+>>> d.setdefault(3, 'c')
+'c'
+>>> d
+{1: 'a', 2: 'b', 3: 'c'}
+>>> d2
+{1: 'a'}
+>>> del d2
+>>> d2
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+NameError: name 'd2' is not defined
+>>> del d[3]
+>>> d
+{1: 'a', 2: 'b'}
+>>> d
+{1: 'a', 2: 'b'}
+>>> for k in d:
+    print(k)
+    
+1
+2
+>>> d    
+{1: 'a', 2: 'b'}
+>>> d2 = dict()
+>>> d2.update(d)
+>>> for v in d.values():
+    print(v)
+    
+a
+b
+>>> for k in d:
+    print(d[k])
+    
+a
+b
+>>> for k in d:
+    print(k, d[k])
+    
+1 a
+2 b
+>>> %Run dictionary_examples2.py
+
+Person ID: 1
+name: John
+age: 27
+sex: Male
+
+Person ID: 2
+name: Marie
+age: 22
+sex: Female
+
+Person ID: 3
+name: Luna
+age: 24
+sex: Female
+married: No
+
+Person ID: 4
+name: Peter
+age: 29
+sex: Male
+married: Yes
+>>> %Run dictionary_examples2.py
+
+Person ID: 1
+name: John
+age: 27
+sex: Male
+
+Person ID: 2
+name: Marie
+age: 22
+sex: Female
+
+Person ID: 3
+name: Luna
+age: 24
+sex: Female
+married: yes
+
+Person ID: 4
+name: Peter
+age: 29
+sex: Male
+married: Yes
+>>> d = {i : pow(i, 3) for i in range(2, 20, 2)}
+>>> d
+{2: 8, 4: 64, 6: 216, 8: 512, 10: 1000, 12: 1728, 14: 2744, 16: 4096, 18: 5832}
+>>> d = {i : pow(i, 2) for i in range(2, 20, 2)}
+>>> d
+{2: 4, 4: 16, 6: 36, 8: 64, 10: 100, 12: 144, 14: 196, 16: 256, 18: 324}
+>>> d.fromkeys([1, 2, 3, 4], 0)
+{1: 0, 2: 0, 3: 0, 4: 0}
+>>> d.fromkeys([1, 2, 3, 4], None)
+{1: None, 2: None, 3: None, 4: None}
+>>> d = {d:None for d in range(1, 5)}
+>>> d
+{1: None, 2: None, 3: None, 4: None}
+>>> d = {1:}
+  File "<pyshell>", line 1
+    d = {1:}
+           ^
+SyntaxError: invalid syntax
+>>> d = {1:None}
+>>> d
+{1: None}
+>>> s = set('banana')
+>>> s
+{'n', 'a', 'b'}
+>>> s[0]
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+TypeError: 'set' object is not subscriptable
+>>> s.add(1)
+>>> s
+{1, 'n', 'a', 'b'}
+>>> s.add(4)
+>>> s
+{1, 4, 'b', 'n', 'a'}
+>>> s.add((1,2))
+>>> s
+{(1, 2), 1, 4, 'b', 'n', 'a'}
+>>> s.add([3,4])
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+TypeError: unhashable type: 'list'
+>>> s.update({888, 999})
+>>> s
+{(1, 2), 1, 4, 999, 'b', 'n', 888, 'a'}
+>>> s.pop()
+(1, 2)
+>>> l = [1, 2, 3, 3, 2, 2, 2, 4]
+>>> s1 = set(l)
+>>> s
+{1, 4, 999, 'b', 'n', 888, 'a'}
+>>> s1
+{1, 2, 3, 4}
+>>> s1.pop()
+1
+>>> s1.pop()
+2
+>>> 999 in s
+True
+>>> s
+{1, 4, 999, 'b', 'n', 888, 'a'}
+>>> s.add(10)
+>>> s
+{1, 4, 999, 10, 'b', 'n', 888, 'a'}
+>>> s2 = {}
+>>> type(s2)
+<class 'dict'>
+>>> s2 = {1, 3, 5}
+>>> s2
+{1, 3, 5}
+>>> type(s2)
+<class 'set'>
+>>> for i in s2:
+    print(i)
+    
+1
+3
+5
+>>> for i in s2:
+    print(i)
+    
+1
+3
+5
+>>> for i in s2:
+    print(i)
+    
+1
+3
+5
+>>> for i in s2:
+    print(i)
+    
+1
+3
+5
+>>> 

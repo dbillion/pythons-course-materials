@@ -1,0 +1,441 @@
+Python 3.10.2 (tags/v3.10.2:a58ebcc, Jan 17 2022, 14:12:15) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+st = 'this is alice'
+print(st)
+this is alice
+st
+'this is alice'
+st = 'this is alice's cat
+SyntaxError: invalid syntax
+st = "this is alice's cat"
+st
+"this is alice's cat"
+st = 'this is alice\'s cat'
+st
+"this is alice's cat"
+msg = '''
+this is a
+multiline
+text'''
+print(msg)
+
+this is a
+multiline
+text
+def f():
+    '''
+this is my demo fun
+'''
+    pass
+
+f()
+help(f)
+Help on function f in module __main__:
+
+f()
+    this is my demo fun
+
+help(len)
+Help on built-in function len in module builtins:
+
+len(obj, /)
+    Return the number of items in a container.
+
+len(st)
+19
+st
+"this is alice's cat"
+s = st
+s
+"this is alice's cat"
+s[:]
+"this is alice's cat"
+s[3:6]
+'s i'
+s[-1:]
+'t'
+s[-1:0]
+''
+s[-1-10]
+'a'
+s[-1: -10]
+''
+'is' in s
+True
+
+
+
+'90' in s
+False
+'90' not in s
+True
+
+
+
+name = 'tom'
+age = 5
+s = 'hello! %s and you are %d years old' (name, age)
+Traceback (most recent call last):
+  File "<pyshell#44>", line 1, in <module>
+    s = 'hello! %s and you are %d years old' (name, age)
+TypeError: 'str' object is not callable
+s = 'hello! %s and you are %d years old' %(name, age)
+s
+'hello! tom and you are 5 years old'
+s = 'hello! {name} and you are {age} years old'
+s
+'hello! {name} and you are {age} years old'
+f's
+SyntaxError: unterminated string literal (detected at line 1)
+s = f'hello! {name} and you are {age} years old'
+s
+'hello! tom and you are 5 years old'
+name
+'tom'
+age
+5
+
+
+
+dir(s)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+s.capitalize()
+'Hello! tom and you are 5 years old'
+s2 = 'my name is {} and I am {} years old'.format(name, age)
+s2
+'my name is tom and I am 5 years old'
+s2 = 'my name is {0} and I am {1} years old'.format(name, age)
+s2
+'my name is tom and I am 5 years old'
+s2 = 'my name is {1} and I am {0} years old'.format(name, age)
+s2
+'my name is 5 and I am tom years old'
+s2 = 'my name is {1} and I am {0} years old'.format(age, name)
+s2
+'my name is tom and I am 5 years old'
+print('hello my name is {}'.fomat('Tauseef'))
+Traceback (most recent call last):
+  File "<pyshell#67>", line 1, in <module>
+    print('hello my name is {}'.fomat('Tauseef'))
+AttributeError: 'str' object has no attribute 'fomat'. Did you mean: 'format'?
+print('hello my name is {}'.format('tauseef'))
+hello my name is tauseef
+'123'.isdigit()
+True
+'123a'.isdigit()
+False
+msg = '''
+this is a test message which we would like to send.
+testing is good and i like tests'''
+msg
+'\nthis is a test message which we would like to send.\ntesting is good and i like tests'
+print(msg)
+
+this is a test message which we would like to send.
+testing is good and i like tests
+msg.find('test')
+11
+msg
+'\nthis is a test message which we would like to send.\ntesting is good and i like tests'
+msg.split('\n')
+['', 'this is a test message which we would like to send.', 'testing is good and i like tests']
+'hello is is a test message'.split()
+['hello', 'is', 'is', 'a', 'test', 'message']
+l = 'hello is is a test message'.split()
+l
+['hello', 'is', 'is', 'a', 'test', 'message']
+l.join(',')
+Traceback (most recent call last):
+  File "<pyshell#82>", line 1, in <module>
+    l.join(',')
+AttributeError: 'list' object has no attribute 'join'
+','.join(l)
+'hello,is,is,a,test,message'
+' '.join(l)
+'hello is is a test message'
+s = '       hello       tom     '
+s
+'       hello       tom     '
+s.lstrip()
+'hello       tom     '
+s.rstrip()
+'       hello       tom'
+s.strip()
+'hello       tom'
+s.strip().split()
+['hello', 'tom']
+' '.join(s.strip().split())
+'hello tom'
+
+Python 3.10.2 (tags/v3.10.2:a58ebcc, Jan 17 2022, 14:12:15) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+import re
+reg = re.compile(r'Batman|Tina Fey')
+m = reg.search('Batman and Tina Fey')
+m
+<re.Match object; span=(0, 6), match='Batman'>
+reg = re.compile(r'Batman|Superman')
+m = reg.search('Batman and Superman are cool.')
+m
+<re.Match object; span=(0, 6), match='Batman'>
+
+m = reg.match('Batman and superman')
+m
+<re.Match object; span=(0, 6), match='Batman'>
+m = reg.match('Hello Batman and superman')
+m
+m
+m = reg.search('Batman and Superman are cool.')
+m.group()
+'Batman'
+
+
+
+pat = re.compile(r'Bat(wo)?man
+                 
+SyntaxError: unterminated string literal (detected at line 1)
+pat = re.compile(r'Bat(wo)?man')
+                 
+m = pat.search('the adventures of Batman')
+                 
+m
+                 
+<re.Match object; span=(18, 24), match='Batman'>
+m = pat.search('the adventures of Batwoman')
+                 
+m
+                 
+<re.Match object; span=(18, 26), match='Batwoman'>
+m = pat.search('the adventures of Batwowoman')
+                 
+m
+                 
+pat = re.compile(r'Bat(wo)*man')
+                 
+m = pat.search('the adventures of Batman')
+                 
+m
+                 
+<re.Match object; span=(18, 24), match='Batman'>
+m = pat.search('the adventures of Batwoman')
+                 
+m
+                 
+<re.Match object; span=(18, 26), match='Batwoman'>
+m = pat.search('the adventures of Batwowoman')
+                 
+n
+                 
+Traceback (most recent call last):
+  File "<pyshell#32>", line 1, in <module>
+    n
+NameError: name 'n' is not defined
+m
+                 
+<re.Match object; span=(18, 28), match='Batwowoman'>
+pat = re.compile(r'Bat(wo)+man')
+                 
+m = pat.search('the adventures of Batman')
+                 
+m
+                 
+m = pat.search('the adventures of Batwoman')
+                 
+m
+                 
+<re.Match object; span=(18, 26), match='Batwoman'>
+m = pat.search('the adventures of Batwowoman')
+                 
+m
+                 
+<re.Match object; span=(18, 28), match='Batwowoman'>
+m = pat.search('the adventures of Batwowowoman')
+                 
+m
+                 
+<re.Match object; span=(18, 30), match='Batwowowoman'>
+pat = re.compile(r'ha{3}')
+                 
+pat
+                 
+re.compile('ha{3}')
+text = '''
+hello my friend.
+good to see you.
+hahaha....
+'''
+                 
+text
+                 
+'\nhello my friend.\ngood to see you.\nhahaha....\n'
+mo = pat.search(text)
+                 
+mo
+                 
+text = '''
+hello my friend.
+good to see you.
+hahaha
+
+....
+'''
+                 
+mo = pat.search(text)
+                 
+mo
+                 
+mo = pat.search('hahaha)
+                
+SyntaxError: unterminated string literal (detected at line 1)
+mo = pat.search('hahaha')
+                
+mo
+                
+pat
+                
+re.compile('ha{3}')
+pat = re.compile(r'(ha){3)')
+                
+Traceback (most recent call last):
+  File "<pyshell#60>", line 1, in <module>
+    pat = re.compile(r'(ha){3)')
+  File "C:\Python3\lib\re.py", line 251, in compile
+    return _compile(pattern, flags)
+  File "C:\Python3\lib\re.py", line 303, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "C:\Python3\lib\sre_compile.py", line 764, in compile
+    p = sre_parse.parse(p, flags)
+  File "C:\Python3\lib\sre_parse.py", line 962, in parse
+    raise source.error("unbalanced parenthesis")
+re.error: unbalanced parenthesis at position 6
+pat = re.compile(r'(ha){3)'))
+SyntaxError: unmatched ')'
+pat = re.compile(r'(ha){3}')
+mo = pat.search(text)
+mo
+<re.Match object; span=(35, 41), match='hahaha'>
+text
+'\nhello my friend.\ngood to see you.\nhahaha\n\n....\n'
+pat = re.compile(r'ha{3}')
+m = pat.search('haaaa haaa')
+m
+<re.Match object; span=(0, 4), match='haaa'>
+
+
+
+
+
+
+greedy = re.compile(r'(ha){3,5}')
+m1 = greedy.search('hahahahaha')
+m1
+<re.Match object; span=(0, 10), match='hahahahaha'>
+m1 = greedy.search('hahahahahahaha')
+m1
+<re.Match object; span=(0, 10), match='hahahahaha'>
+nongreedy = re.compile(r'(ha){3,5}?')
+m1 = nongreedy.search('hahahahahahaha')
+m1
+<re.Match object; span=(0, 6), match='hahaha'>
+
+
+
+fone = re.compile(r'(\d\d\d) (\d\d\d\d\d\d\d\d)')
+m = fone.search('here is my phone +372 58292929')
+m
+<re.Match object; span=(18, 30), match='372 58292929'>
+m.group(0)
+'372 58292929'
+m.group(1)
+'372'
+m.group(2)
+'58292929'
+country= m.group(1)
+country
+'372'
+number = m.group(2)
+number
+'58292929'
+fone = re.compile(r'(\d{3}) (\d{8}')
+Traceback (most recent call last):
+  File "<pyshell#96>", line 1, in <module>
+    fone = re.compile(r'(\d{3}) (\d{8}')
+  File "C:\Python3\lib\re.py", line 251, in compile
+    return _compile(pattern, flags)
+  File "C:\Python3\lib\re.py", line 303, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "C:\Python3\lib\sre_compile.py", line 764, in compile
+    p = sre_parse.parse(p, flags)
+  File "C:\Python3\lib\sre_parse.py", line 948, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+  File "C:\Python3\lib\sre_parse.py", line 443, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "C:\Python3\lib\sre_parse.py", line 836, in _parse
+    raise source.error("missing ), unterminated subpattern",
+re.error: missing ), unterminated subpattern at position 8
+fone = re.compile(r'(\d{3}) (\d{8})')
+m = fone.search('here is my phone +372 58292929')
+m.group(1)
+'372'
+m.group(2)
+'58292929'
+cl = re.compile(r'[aeiou]')
+text
+'\nhello my friend.\ngood to see you.\nhahaha\n\n....\n'
+m = cl.search(text)
+m
+<re.Match object; span=(2, 3), match='e'>
+m = cl.findall(text)
+m
+['e', 'o', 'i', 'e', 'o', 'o', 'o', 'e', 'e', 'o', 'u', 'a', 'a', 'a']
+cl = re.compile(r'[^aeiou]')
+m = cl.findall(text)
+m
+['\n', 'h', 'l', 'l', ' ', 'm', 'y', ' ', 'f', 'r', 'n', 'd', '.', '\n', 'g', 'd', ' ', 't', ' ', 's', ' ', 'y', '.', '\n', 'h', 'h', 'h', '\n', '\n', '.', '.', '.', '.', '\n']
+text = '''
+this is my number 888989.
+call me after 9pm
+'''
+cl = re.compile(r'[0-9]')
+m = cl.findall(text)
+m
+['8', '8', '8', '9', '8', '9', '9']
+text = '''
+this is my number 56459933.
+call me after 9pm
+'''
+fone = re.compile(r'[56]\d{6}')
+m = fone.search(text)
+m
+<re.Match object; span=(19, 26), match='5645993'>
+m.group()
+                       
+'5645993'
+
+
+
+fone = re.compile(r'''
+(\+372|00372)   #country code
+[ -]#country code separator
+([56]\d{5,6})   #individual number
+''', re.VERBOSE)
+fone
+re.compile('\n(\\+372|00372)   #country code\n[ -]#country code separator\n([56]\\d{5,6})   #individual number\n', re.VERBOSE)
+text = '''
+my phone is +372-52391509 and you can also call me on my landline number
+which is give here 00372 6254341
+'''
+m = fone.findall(text)
+m
+[('+372', '5239150'), ('00372', '6254341')]
+text = '''
+my phone is +372-52391509 and you can also call me on my landline number
+which is give here 00372 6254341.
+this is not my number 56565 so do not call here
+'''
+
+m = fone.findall(text)
+m
+[('+372', '5239150'), ('00372', '6254341')]
+
+
